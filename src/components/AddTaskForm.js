@@ -11,8 +11,9 @@ const AddTaskForm = () => {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="newTask">Add task</label>
+                <label htmlFor="newTask">Add task (write task description and click enter)</label>
                 <input id="newTask" onChange={(e) => setNewTask(e.target.value)}/>
+                <p htmlFor="newTask">Click on an existing task to delete it</p>
             </form>
         </div>
     )
